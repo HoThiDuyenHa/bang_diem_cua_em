@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width:500px;
+            height:auto;
+            background-color: rgb(121, 135, 141);
+            
+        }
+        .box{
+            display:flex;
+            padding:5px;
+           
+        }
+        h1{
+            text-align: center;
+        }
+
+        .button{
+            margin-left: 150px;
+        
+        }
+        .button .btn{
+            margin: 5px;
+        }
+
+               
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <h1> BẢNG ĐIỂM CỦA EM</h1> 
+        <div class="box">
+            <p>Semester1: </p>
+            <input id ="se1" class="input_number" type="number">
+        </div>
+        <div class="box">
+            <p>Semester2: </p>
+            <input id="se2" class="input_number" type="number">
+        </div>
+
+        <div class="box">
+            <p>Year:</p>
+           <select id="year">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+           </select>
+              
+        </div>
+
+        <div class="box">
+            <p>Summarise: </p>
+            <input  id="kq" class="input_number" type="number" disabled>
+        </div>
+
+        <!-- <div class="text">
+            <p id="xl"></p>
+
+        </div> -->
+
+        <div class="button">
+            <button class="btn" id="ok" cancle="ok"  onclick="myFunction()"> OK</button>
+            <button class="btn" id="cancel" value="cancel" onclick="myFunction2()"> Cancle</button>
+        </div>
+    
+        <div id="xl"> </div>
+        <script src="Bang_diem.js"></script>
+
+    </div>
+    
+</body>
+</html>
